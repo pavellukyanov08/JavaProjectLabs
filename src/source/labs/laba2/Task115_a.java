@@ -12,5 +12,14 @@ public class Task115_a {
             System.out.printf("Элемент суммы %d = %f\n", k, summ);
         }
         System.out.printf("Результат: %f", summ);
+
+//        Scanner in = new Scanner(System.in);
+//        float n = in.nextFloat();
+//        float summi = 0;
+//        System.out.print("Введите натуральное число: "); int n = in.nextInt();
+//        for (int i = 1; i <= n; i++) {
+//            summi = summi + 1 / i;
+//        }
+//        System.out.println(summi);
     }
 }
