@@ -1,31 +1,27 @@
 package source.labs.laba4;
 
-import java.util.*;
-
 public class Task9_159 {
     public static void main(String[] args) {
         String word1 = "processor";
         String word2 = "information";
-        String combinedWords = word1 + word2;
+        STS(word1.concat(word2));
+    }
 
-        Map<Character, Integer> letterCounts = new HashMap<>();
-
-        // Count the number of occurrences of each letter
-        for (int i = 0; i < combinedWords.length(); i++) {
-            char c = combinedWords.charAt(i);
-            if (letterCounts.containsKey(c)) {
-                letterCounts.put(c, letterCounts.get(c) + 1);
-            } else {
-                letterCounts.put(c, 1);
+    private static void STS(String s) {
+        char[] c = s.toCharArray();
+        for (int i = 0; i < c.length; i++) {
+            if (CON(c[i], c) == 1) {
+                System.out.print("" + c[i]);
             }
         }
+    }
 
-        // Print the letters that occur only once
-        for (char c : letterCounts.keySet()) {
-            if (letterCounts.get(c) == 1) {
-                System.out.print(c + " ");
-            }
+    private static int CON(char c, char[] c0) {
+        int i = 0;
+        for (int a = 0; a < c0.length; a++) {
+            i += (int)c == (int)c0[a] ? 1 : 0;
         }
+        return i;
     }
 }
 

@@ -13,6 +13,7 @@ public class Task9_145 {
         int startIndex = 0;
         int endIndex = 0;
 
+
         while (endIndex < text.length()) {
             startIndex = text.indexOf("+", endIndex) + 1;
             endIndex = text.indexOf("+", startIndex);
