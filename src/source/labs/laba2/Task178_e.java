@@ -4,16 +4,31 @@ import java.util.Scanner;
 
 public class Task178_e {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите количество членов: ");
-        int n = scanner.nextInt();
-        int i, k = 0;
-        for (i = 1; i <= n; i++) {
-            System.out.println("Введите последовательность: ");
-            int a = scanner.nextInt();
-            if ((i % 2 == 0) && (a % 2 == 1))
-                k++;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Введите команду: ");
+        int option = sc.nextInt();
+        switch (option) {
+            case 1:
+                System.out.print("Введите число элемента: ");
+                int n = sc.nextInt();
+                int numb = 0;
+                for (int i = 0; i < n; i++) {
+                    System.out.print("Введите число: ");
+                    int num = sc.nextInt();
+                    if (num % 2 != 0) {
+                        numb;
+                    }
+                }
+                System.out.println("Количество нечетных целых чисел:" + numb);
+                break;
+            case 2:
+                System.out.println("Вы выбрали вариант 2");
+                break;
+
+            default:
+                System.out.println("Неверный вариант");
+                break;
         }
-        System.out.println("Количество членов: " + k);
+        sc.close();
     }
 }

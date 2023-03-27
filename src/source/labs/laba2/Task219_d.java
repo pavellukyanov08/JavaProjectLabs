@@ -2,11 +2,15 @@ package source.labs.laba2;
 
 public class Task219_d {
     public static void main(String[] args) {
-        int a = -3, b = 5, n = 40;
+        double a = -1, b = 3;
+        int n = 40;
         double h = (double) (b - a) / n;
+        double xi, yi;
+        System.out.println("x\t y");
         for (int i = 0; i <= n; i++) {
-            double d = a + i + h * 2.7, g = -(a + i + h);
-            System.out.printf("f(x) = %.2f, x = %.1f, i = %d\n", Math.pow((d), g), a + i * h, i);
+            xi = a + i * h;
+            yi = xi * Math.exp(-xi);
+            System.out.printf("%.2f,\t %.4f\n", Math.pow((d), g), a + i * h, i);
         }
     }
 }

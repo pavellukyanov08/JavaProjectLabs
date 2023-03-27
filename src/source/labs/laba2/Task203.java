@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Task203 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int CC = 0;
-        int[] Ci = new int[10];
+        int N, ti;
         System.out.println("Количество покупателей в очереди: ");
-        int n = in.nextInt();
-
+        N = in.nextInt();
         System.out.println("Время на обсулеживание одного покупателя: ");
-        int ti = in.nextInt();
+        ti = in.nextInt();
+        int[] C1 = new int[N];
 
-        for (int i = 1; i <= n; i++) {
-            CC += ti;
-            Ci[i] = CC;
-            System.out.println(i + "-й покупатель провел в очереди " + Ci[i] + " минут");
+        int Cc = 0;
+        for (int i = 1; i <= N; i++) {
+            Cc += ti;
+            C1[i] = Cc;
+            System.out.println(i + "-й покупатель провел в очереди " + C1[i] + " минут");
         }
-
+        in.close();
     }
 }
