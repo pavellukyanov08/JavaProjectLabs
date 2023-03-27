@@ -9,14 +9,14 @@ public class Task178_e {
         int option = sc.nextInt();
         switch (option) {
             case 1:
-                System.out.print("Введите число элемента: ");
+                System.out.print("Введите кол-во чисел: ");
                 int n = sc.nextInt();
                 int numb = 0;
                 for (int i = 0; i < n; i++) {
                     System.out.print("Введите число: ");
                     int num = sc.nextInt();
                     if (num % 2 != 0) {
-                        numb;
+                        numb++;
                     }
                 }
                 System.out.println("Количество нечетных целых чисел:" + numb);

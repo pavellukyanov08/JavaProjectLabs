@@ -10,7 +10,7 @@ public class Task219_d {
         for (int i = 0; i <= n; i++) {
             xi = a + i * h;
             yi = xi * Math.exp(-xi);
-            System.out.printf("%.2f,\t %.4f\n", Math.pow((d), g), a + i * h, i);
+            System.out.printf("%.2f,\t %.4f\n", xi, yi);
         }
     }
 }
