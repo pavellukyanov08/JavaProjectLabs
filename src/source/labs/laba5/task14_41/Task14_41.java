@@ -6,7 +6,7 @@ public class Task14_41 {
         String inputFile = "C:\\Users\\lukja\\IdeaProjects\\JavaProjectLabs\\src\\source\\labs\\laba5\\task14_41\\input.txt";
         String outputFile = "C:\\Users\\lukja\\IdeaProjects\\JavaProjectLabs\\src\\source\\labs\\laba5\\task14_41" +
                 "\\output.txt";
-        int removeIndex = 4; // удалить пятый элемент (индекс 4)
+        int removeIndex = 4;
 
         try {
             FileInputStream inputStream = new FileInputStream(inputFile);
