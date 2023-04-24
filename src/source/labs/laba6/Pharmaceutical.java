@@ -78,5 +78,4 @@ public class Pharmaceutical{
             pharmaceutical1.print(); // выведет информацию о лекарстве, в том числе новую цену
         }
     }
-
 }
