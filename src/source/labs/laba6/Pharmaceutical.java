@@ -1,6 +1,6 @@
 package source.labs.laba6;
 
-public class Pharmaceutical{
+public class Pharmaceutical {
     private int id;
     private String name;
     private String manufacturer;
