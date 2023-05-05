@@ -1,15 +1,15 @@
 package source.labs.laba7.Aggregation;
 
-public class Manufacturer {
+public class PharmaceuticalCompany {
     String region;
     String city;
     String street;
-    String name;
+    String comp_name;
 
-    Manufacturer (String region, String city, String street, String name) {
+    PharmaceuticalCompany (String region, String city, String street, String comp_name) {
         this.region = region;
         this.city = city;
         this.street = street;
-        this.name = name;
+        this.comp_name = comp_name;
     }
 }

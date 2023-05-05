@@ -1,36 +1,36 @@
 package source.labs.laba7.Composition;
 
-import java.util.ArrayList;
-import java.util.Date;
+import java.util.*;
 
 public class Pharmaceutical {
-    class Employee {
+    class Medication {
         int id;
         String name;
-        double salary;
-        public Employee(int id, String name, double salary) {
+        double price;
+
+        public Medication(int id, String name, double price) {
             this.id = id;
             this.name = name;
-            this.salary = salary;
+            this.price = price;
         }
-        public String toStirng() {
-            return String.format("%d\t %s\t %10.2f p.", this.id, this.name, this.salary);
+        public String toString() {
+            return String.format("%d\t %s\t %10.2f p.", this.id, this.name, this.price);
         }
     }
     public int id;
     public String name;
-    public ArrayList<Employee> emp;
-        public Pharmaceutical() {
-            this.emp = new ArrayList<Employee>();
-        }
-        public Employee CreateEmployee(int id, String name, double salary) {
-            Employee e = new Employee(id, name, salary);
-            return e;
-        }
-        @Override public String toString() {
-            String s = String.format("%d\t %s\n", this.id, this.name);
-            for (Pharmaceutical.Employee k : this.emp)
-                s += String.format("%s\n", k);
-            return s;
-        }
+    public ArrayList<Medication> med;
+    public Pharmaceutical() {
+        this.med = new ArrayList<Medication>();
+    }
+    public Medication CreateMedication(int id, String name, double price) {
+        Medication m = new Medication(id, name, price);
+        return m;
+    }
+    public String toString() {
+        String s = String.format("%d\t %s\n", this.id, this.name);
+        for (Pharmaceutical.Medication k : this.med)
+            s += String.format("%s\n", k);
+        return s;
+    }
 }

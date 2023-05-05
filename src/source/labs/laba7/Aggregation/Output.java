@@ -2,23 +2,20 @@ package source.labs.laba7.Aggregation;
 
 public class Output {
     public static void main(String[] args) {
-        Manufacturer manufacturer = new Manufacturer(
+        PharmaceuticalCompany pc = new PharmaceuticalCompany(
                 "Алтайский край",
                 "Барнаул",
                 "Социалистический",
-                "ООО Эвалар");
-        Pharmaceutical pharm = new Pharmaceutical(
+                "Губернский лекарь");
+        Medication pharm = new Medication(
                 1,
                 "Ношпа",
-                manufacturer,
-                "Лекарство",
-                400.0);
+                pc,
+                400.00);
 
-        System.out.println(pharm.id);
-        System.out.println(pharm.name);
-        System.out.println(pharm.InfoManufacturer.region);
-        System.out.println(pharm.InfoManufacturer.city);
-        System.out.println(pharm.InfoManufacturer.street);
-        System.out.println(pharm.InfoManufacturer.name);
+        System.out.println("ID препарата: " + pharm.id);
+        System.out.println("Название: " + pharm.name);
+        System.out.println("Аптека: " + pc.comp_name);
+        System.out.println(pharm.price);
     }
 }
