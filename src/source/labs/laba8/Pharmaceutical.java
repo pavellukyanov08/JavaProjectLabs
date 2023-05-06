@@ -14,6 +14,7 @@ public abstract class Pharmaceutical {
     }
 
     public abstract void PrintInfo();
+
     @Override
     public String toString() {
          return id + "\n" + name + "\n" + date_prod + "\n" + price;

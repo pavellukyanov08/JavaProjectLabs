@@ -1,17 +1,17 @@
 package source.labs.laba8;
 
 public class Medication extends Pharmaceutical {
-    private int recipe;
+    private String recipe;
 
-    public int getRecipe() {
+    public String getRecipe() {
         return recipe;
     }
 
-    public void setRecipe(int recipe) {
+    public void setRecipe(String recipe) {
             this.recipe = recipe;
     }
 
-    public Medication(int id, String name, String date_prod, double price) {
+    public Medication(int id, String name, String date_prod, double price, String recipe) {
         super(id, name, date_prod, price);
         this.recipe = recipe;
     }
@@ -21,7 +21,7 @@ public class Medication extends Pharmaceutical {
                         "\nНаименование - %s;" +
                         "\nДата производства - %s;" +
                         "\nЦена - %.2f р.;" +
-                        "\nРецепт + %s",
+                        "\nРецепт - %s\n",
                 id,
                 name,
                 date_prod,
