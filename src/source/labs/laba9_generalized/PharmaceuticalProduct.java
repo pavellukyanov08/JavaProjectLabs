@@ -1,4 +1,4 @@
-package source.labs.laba9;
+package source.labs.laba9_generalized;
 
 public class PharmaceuticalProduct<T> {
   private T activeIngredient;
